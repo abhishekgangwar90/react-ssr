@@ -1,7 +1,6 @@
 import React from "react";
 
 function Home(props) {
-  console.log(props)
   const onClick = () => {
     props.history.push('/userList')
   };
