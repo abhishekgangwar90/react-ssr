@@ -14,4 +14,11 @@ const dispatchAction = {
     fetchUser
 }
 
+
+function loadUserData(store){
+    return store.dispatch(fetchUser());
+}
+
+export { loadUserData }
+
 export default connect(mapStateToProps, dispatchAction)(UserList)

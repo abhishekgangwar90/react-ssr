@@ -1,8 +1,9 @@
 import React from "react";
 
-function Home() {
+function Home(props) {
+  console.log(props)
   const onClick = () => {
-    alert("Hello javascript works");
+    props.history.push('/userList')
   };
 
   return (

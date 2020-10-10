@@ -1,18 +1,19 @@
 import React from 'react';
 import Home from '../../pages/Home';
 import About from '../../pages/About';
-import UserList from '../../organisms/userList';
+import UserList,{loadUserData} from '../../organisms/userList';
 
 export default [
     {
         path: '/',
         component: Home,
-        exact: true
+        exact: true,
     },
     {
         path: '/userList',
         component: UserList,
-        exact: true
+        exact: true,
+        loadData: loadUserData
     },
     {
         path: '/about',
